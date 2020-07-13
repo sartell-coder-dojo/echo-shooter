@@ -23,6 +23,6 @@ public class Projectile extends Actor
     {
         move(10);
         if(isAtEdge())
-        getWorld().removeObject(this);
+          getWorld().removeObject(this);
     }    
 }
