@@ -17,23 +17,17 @@ public class Player extends Actor
     
     int speed = 7;
     int time = 0;
-    int randomRecoil = Greenfoot.getRandomNumber(10);
     public Player()
     {
-        //setImage(new GreenfootImage(64, 64));
-        //getImage().setColor(Color.BLUE);
-        //getImage().fillOval(0, 0, 32, 32);
-        //getImage().setColor(Color.WHITE);
-        //getImage().fillRect(18, 28, 24, 9);
         // this next line of code sets the player image
         setImage("sprite_character.png");
-        //getImage().mirrorHorizontally();
+        getImage().mirrorHorizontally();
     }
 
     public void turnAround()
     {
         //getNeighbours​(int distance, boolean diagonal, java.lang.Class<A> cls)
-        List<Zombee> zombiesNearMe = getNeighbours​(200, true, Zombee.class);
+        List<Zombee> zombiesNearMe = getNeighbours(200, true, Zombee.class);
         if(zombiesNearMe.size() > 0) {
             Zombee zombeeToShoot = zombiesNearMe.get(0);
             turnTowards(zombeeToShoot.getX(), zombeeToShoot.getY());

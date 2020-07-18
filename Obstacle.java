@@ -19,6 +19,11 @@ public class Obstacle extends Actor
      */
     public void act() 
     {
+        
+        for (Projectile projectile: getIntersectingObjects(Projectile.class)) {
+          getWorld().removeObject(projectile);  
+        }
+        
         for(Actor intersectingActor: getIntersectingObjects(Actor.class)) {
             moveToNearestEdge(intersectingActor);
         }
