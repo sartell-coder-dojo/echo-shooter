@@ -43,6 +43,11 @@ public class Zombee extends Actor
         {
             health--;
             getWorld().removeObject(projectile);
+            if(counter.score % 5 == 4) {
+                health += 50;
+                getImage().scale(50, 50);
+                counter.score++;
+            }
         }
         if(health == 0)
         {

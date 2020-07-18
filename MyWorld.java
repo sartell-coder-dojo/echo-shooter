@@ -11,6 +11,8 @@ public class MyWorld extends World
     int count = 0;
     int spawnSpeed = 25;
     int randomSpawn;
+    int level = 1;
+    int nextLevelScore = 20;
     boolean isSpawnEnabled = true;
     public Player mainPlayer = new Player();
     Counter counter = new Counter();
@@ -22,6 +24,7 @@ public class MyWorld extends World
         //getBackground().fill();
         addObject(mainPlayer, getWidth()/2, getHeight()/2);
         addObject(counter, 100,100);
+        showText(String.format("Level %s (next level at score %s)", level, nextLevelScore), 200, 50);
         
         // add obstacles
         addObject(new Obstacle(), 175, 175);
@@ -51,5 +54,11 @@ public class MyWorld extends World
     {
         count ++;
         spawnZombees();
+        if(counter.score > nextLevelScore) {
+            level++;
+            spawnSpeed -= 5;
+            nextLevelScore += nextLevelScore * 1.5;
+            showText(String.format("Level %s (next level at score %s)", level, nextLevelScore), 200, 50);
+        }
     }
 }

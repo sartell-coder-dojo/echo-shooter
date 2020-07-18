@@ -33,8 +33,7 @@ public class Player extends Actor
     public void turnAround()
     {
         //getNeighbours​(int distance, boolean diagonal, java.lang.Class<A> cls)
-        List<Zombee> zombiesNearMe = getNeighbours​(600, true, Zombee.class);
-        System.out.println(zombiesNearMe);
+        List<Zombee> zombiesNearMe = getNeighbours​(200, true, Zombee.class);
         if(zombiesNearMe.size() > 0) {
             Zombee zombeeToShoot = zombiesNearMe.get(0);
             turnTowards(zombeeToShoot.getX(), zombeeToShoot.getY());
