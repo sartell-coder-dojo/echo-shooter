@@ -30,3 +30,10 @@ To save time, you can create a new branch and checkout that branch in one comman
 using the `-b <branch-name>` flag on the `checkout` command:
 
 `git checkout -b my-branch-name`
+
+Verify you are on the expected branch by running `git status` which should tell
+you the name of the branch you're currently on.
+
+### Make your changes
+Once you have created and checked out your branch, you can modify your code as
+usual without worrying that your changes will interfere with anyone else.
