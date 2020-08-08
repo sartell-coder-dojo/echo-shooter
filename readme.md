@@ -6,14 +6,23 @@ Find an online playable version of the game at https://sartellcoderdojo.org/echo
 To work on this project, follow these instructions
 
 ### Install Git
-https://git-scm.com/
+Install git from https://git-scm.com/. Download the installation file appropriate
+for your Operating System, run the installation file, and follow the prompts it
+provides.
+
+Once installed, verify your installation, open a command prompt (or Git-Bash
+program for Windows users) and type `git --version` at the prompt and then hit the
+Return (or Enter) key. If successful, the program should respond with the installed
+version number.
+
+![git-version](assets/readme-fc736b36.gif)
 
 ### Checkout the code
 To checkout the code, open up a terminal (AKA command prompt) on your system. Then
 change directory (`cd`) to the directory you want to checkout to and execute
 the following git command:
 
-`git clone git@github.com:sartell-coder-dojo/echo-shooter.git`
+`git clone https://github.com/sartell-coder-dojo/echo-shooter.git`
 
 ### Create a branch
 If you would like to keep your changes separate from anyone else working on the
@@ -37,3 +46,5 @@ you the name of the branch you're currently on.
 ### Make your changes
 Once you have created and checked out your branch, you can modify your code as
 usual without worrying that your changes will interfere with anyone else.
+
+As you modify

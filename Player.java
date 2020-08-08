@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * Write a description of class Player here.
  * 
- * @author (your name) 
+ * @author Joe Degiovanni
  * @version (a version number or a date)
  */
 public class Player extends Actor
