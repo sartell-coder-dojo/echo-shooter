@@ -13,7 +13,7 @@ To checkout the code, open up a terminal (AKA command prompt) on your system. Th
 change directory (`cd`) to the directory you want to checkout to and execute
 the following git command:
 
-`git clone git@github.com:sartell-coder-dojo/echo-shooter.git`
+`git clone https://github.com:sartell-coder-dojo/echo-shooter.git`
 
 ### Create a branch
 If you would like to keep your changes separate from anyone else working on the
