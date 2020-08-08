@@ -1,5 +1,7 @@
 # README
 
+Find an online playable version of the game at https://sartellcoderdojo.org/echo-shooter/
+
 ## Getting started
 To work on this project, follow these instructions
 
