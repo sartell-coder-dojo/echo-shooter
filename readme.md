@@ -24,6 +24,8 @@ the following git command:
 
 `git clone https://github.com/sartell-coder-dojo/echo-shooter.git`
 
+![clone](assets/readme-251bcde9.gif)
+
 ### Create a branch
 If you would like to keep your changes separate from anyone else working on the
 project, it is advised to create a new branch for your work. To create a branch
