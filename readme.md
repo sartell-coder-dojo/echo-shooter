@@ -49,4 +49,4 @@ you the name of the branch you're currently on.
 Once you have created and checked out your branch, you can modify your code as
 usual without worrying that your changes will interfere with anyone else.
 
-As you modify
+to be continued...
