@@ -15,7 +15,7 @@ public class Player extends Actor
      * line of comment
      */
     
-    int speed = 7;
+    int speed = 7; // move 7 units
     int time = 0;
     public Player()
     {
